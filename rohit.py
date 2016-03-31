@@ -2,6 +2,7 @@
 
 import os
 
+resultDict = dict()
 
 #loop through
 for i in os.listdir(os.getcwd()):
@@ -12,6 +13,8 @@ for i in os.listdir(os.getcwd()):
             total = int(lines[0].split(" ",1)[0])
             duplicate = int(lines[3].split(" ",1)[0])
             result = total-duplicate
+	    resultDict[i]=result
+            
             print "Result for {}: {}\n".format(i, result)
         except:
             print "Invalid File {}\n".format(i)
