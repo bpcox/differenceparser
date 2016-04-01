@@ -15,7 +15,7 @@ for i in os.listdir(os.getcwd()):
             result = total-duplicate
 	    resultDict[i]=result
             
-            print "Result for {}: {}\n".format(i, result)
+            print "Result for {}: {}".format(i, result)
         except:
-            print "Invalid File {}\n".format(i)
+            print "Invalid File {}".format(i)
 
